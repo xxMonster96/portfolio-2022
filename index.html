@@ -5,10 +5,10 @@
   <title>Harlen B | Work Page</title>
   <meta name="description" content="A portfolio site example for Harlen Bertrand.">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="screenshot.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -23,7 +23,10 @@
       </ul>
     </header>
     <div class="hero-headline-wrapper">
-      <h1 class="hero-headline stroke-shadow">HELLO, I'M A STORYTELLER AND ILLUSTRATOR!</h1>
+      <!-- <h1 class="hero-headline stroke-shadow">HELLO, I'M A STORYTELLER AND ILLUSTRATOR!</h1> -->
+      <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="project-images/work-page-images/FacePreviewBase-hevc-safari-hb.mp4" type="video/mp4">
+      </video>
     </div>
     <footer class="hero-footer">
       <ul class="hero-footer-navigation">
@@ -45,34 +48,34 @@
         </li>
         <li class="work-page-grid-item">
           <a href="#">
-          <figure>
-            <img src="Ariel Thumbnail'.png" alt="Describe your project">
-          </figure>
-        </a>
+            <figure>
+              <img src="Ariel Thumbnail'.png" alt="Describe your project">
+            </figure>
+          </a>
         </li>
         <li class="work-page-grid-item"><a href="project-1.html">
-          <figure>
-            <img src="Zoe Face.png" alt="Describe your project">
-          </figure>
-        </a>
+            <figure>
+              <img src="Zoe Face.png" alt="Describe your project">
+            </figure>
+          </a>
         </li>
         <li class="work-page-grid-item"><a href="#">
-          <figure>
-            <img src="Gul'dan.png" alt="Describe your project">
-          </figure>
-        </a>
+            <figure>
+              <img src="Gul'dan.png" alt="Describe your project">
+            </figure>
+          </a>
         </li>
         <li class="work-page-grid-item"><a href="#">
-          <figure>
-            <img src="Heisenberg.png" alt="Describe your project">
-          </figure>
-        </a>
+            <figure>
+              <img src="Heisenberg.png" alt="Describe your project">
+            </figure>
+          </a>
         </li>
         <li class="work-page-grid-item"><a href="#">
-          <figure>
-            <img src="EPA.png" alt="Describe your project">
-          </figure>
-        </a>
+            <figure>
+              <img src="EPA.png" alt="Describe your project">
+            </figure>
+          </a>
         </li>
       </ul>
     </section>
@@ -82,15 +85,20 @@
     <li class="footer-item-1">
       <h2>Harlen Bertrand</h2>
       <h3>Jack of All Trades / Storyteller</h3>
-      <p>With an eye for articulate storytelling that transport readers into different worlds filled with adventure, drama, action, and sometimes even horror, I look to put those skills I’ve acquired to good use. With the additional skills of artistry, writing, directing, and design, I look to create stories that have their own cultures, history, and <a href="javascript:void(0)"
-          class="toggleGhost colored-link" id="btnGhost value=" Hide Ghost" onclick="ShowHideDiv(this)">mysteries.</a>
+      <p>With an eye for articulate storytelling that transport readers into different worlds filled with adventure,
+        drama, action, and sometimes even horror, I look to put those skills I’ve acquired to good use. With the
+        additional skills of artistry, writing, directing, and design, I look to create stories that have their own
+        cultures, history, and <a href="javascript:void(0)" class="toggleGhost colored-link" id="btnGhost value=" Hide
+          Ghost" onclick="ShowHideDiv(this)">mysteries.</a>
       </p>
     </li>
     <li class="footer-item-2">
       <h2>Awards &amp; Recognition</h2>
       <ul class="awards-list">
         <li class="award-item"><a href="#">Irving K. Barber Scholarship</a></li>
-        <li class="award-item"><a href="https://www.ideaschoolofdesign.com/home/2021/9/harlen-betrand-idea-grad-2023-wins-the-2021-gdc-foundation-cheryl-lynn-rutledge-northern-indigenous-student-award">GDC Foundation Cheryl Lynn Rutledge Northern Indigenous Student Award</a></li>          
+        <li class="award-item"><a
+            href="https://www.ideaschoolofdesign.com/home/2021/9/harlen-betrand-idea-grad-2023-wins-the-2021-gdc-foundation-cheryl-lynn-rutledge-northern-indigenous-student-award">GDC
+            Foundation Cheryl Lynn Rutledge Northern Indigenous Student Award</a></li>
       </ul>
     </li>
     <li class="footer-item-3">
@@ -98,42 +106,45 @@
       <ul class="socials-list">
         <li class="social-item"><a href="https://www.instagram.com/monstrous.creations/?hl=en">Insta</a></li>
         <li class="social-item"><a href="https://www.linkedin.com/in/harlen-bertrand-734942210/">LinkedIn</a></li>
-        <li class="social-item"><a href="https://xmonster1.artstation.com/">Artstation</a></li>                
+        <li class="social-item"><a href="https://xmonster1.artstation.com/">Artstation</a></li>
       </ul>
-    </li>    
+    </li>
     <li class="footer-item-4">
       <p><a href="#top">Smooth scroll to the top</a></p>
       <p>&copy; 2022. Made with ❤ and CSS Grid by James Neufeld and me. Harlen.</p>
     </li>
   </ul>
 
-    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>  
+  <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
 
-    <div id="ghostanimation" class="ghost"><img src="OldManWalker.png" /></div>
-    <script type="text/javascript">function ShowHideDiv(btnGhost) {
-      var GhostStyle = document.getElementById("ghostanimation");
-if (btnGhost.value == "Hide Ghost") {
-          GhostStyle.style.display = "none";
-          btnGhost.value = "Play Ghost";
-      } else {
-          GhostStyle.style.display = "block";
-          btnGhost.value = "Hide Ghost";
-      }
-  }</script>   
+  <div id="ghostanimation" class="ghost"><img src="OldManWalker.png" /></div>
   <script type="text/javascript">
-  myID = document.getElementById("myID");
-
-var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y >= 800) {
-        myID.className = "bottomMenu show"
-    } else {
-        myID.className = "bottomMenu hide"
+    function ShowHideDiv(btnGhost) {
+      var GhostStyle = document.getElementById("ghostanimation");
+      if (btnGhost.value == "Hide Ghost") {
+        GhostStyle.style.display = "none";
+        btnGhost.value = "Play Ghost";
+      } else {
+        GhostStyle.style.display = "block";
+        btnGhost.value = "Hide Ghost";
+      }
     }
-};
+  </script>
+  <script type="text/javascript">
+    myID = document.getElementById("myID");
 
-window.addEventListener("scroll", myScrollFunc);</script> 
-  
+    var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 800) {
+        myID.className = "bottomMenu show"
+      } else {
+        myID.className = "bottomMenu hide"
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
+
 </body>
 
 </html>

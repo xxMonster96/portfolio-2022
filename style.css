@@ -83,7 +83,7 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  background: var(--background-color);
+  /* background: var(--background-color); */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -246,16 +246,16 @@ p {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle,
+  /* background: radial-gradient(circle,
       rgb(87, 143, 196) 0%,
-      rgb(9, 19, 31) 100%);
+      rgb(9, 19, 31) 100%); */
 }
 
 .branding-navigation {
   display: flex;
-  background: linear-gradient(0deg,
+  /* background: linear-gradient(0deg,
   rgb(87, 143, 196) 0%,
-  rgb(0, 0, 0) 40%);;
+  rgb(0, 0, 0) 40%);; */
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
@@ -305,6 +305,30 @@ p {
   flex-direction: column;
 }
 
+/* Custom Hero Backgrounds */
+
+.hero-project-1 {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: url(project-images/angels/AngelsPreviewBase-hevc-safari-hb.mp4);
+}
+
+
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
 
 /* Global Footer
 
@@ -324,7 +348,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 50vh;
+  min-height: 100vh;
   background: #f5f5f5;
   padding: 1rem 1rem;
 }
@@ -393,7 +417,7 @@ p {
 
 .project-image {
   font-size: 12rem;
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,9 +431,9 @@ p {
 /* Main Project Image Area */
 .project-details {
   width: 100%;
-  background-image: linear-gradient(-225deg,
+  /* background-image: linear-gradient(-225deg,
       rgb(87, 143, 196) 0%, 
-      #000000 100%);
+      #000000 100%); */
   padding: 1rem;
 }
 
@@ -449,23 +473,17 @@ p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body {
-    background: var(--color-darkest);
-  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-    background: var(--color-dark);
-  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-    background: var(--color-normal);
-  }
+
 
   h1 {
     font-size: 4.275rem;
@@ -580,15 +598,11 @@ p {
 
   /* X-Large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
-    body {
-      background: var(--color-light);
-    }
+
   }
 
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
-    body {
-      background: var(--color-lightest);
-    }
-  }
+
+ 
 }
