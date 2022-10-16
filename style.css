@@ -56,7 +56,7 @@ html {
 
 :root {
   --primary-text-color: #222;
-  --accent-color: #555;
+  --accent-color: rgb(255, 255, 255);
   --hyperlink-color: rgb(153, 153, 153);
   --hyperlink-alternate-color: orangered;
   --hover-color: rgb(255, 255, 255);
@@ -125,9 +125,10 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  font-weight: 300;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: var(--accent-color);
+  color:#00bbff;
 }
 
 h3 {
@@ -217,7 +218,7 @@ p {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 0;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -246,16 +247,10 @@ p {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  /* background: radial-gradient(circle,
-      rgb(87, 143, 196) 0%,
-      rgb(9, 19, 31) 100%); */
 }
 
 .branding-navigation {
   display: flex;
-  /* background: linear-gradient(0deg,
-  rgb(87, 143, 196) 0%,
-  rgb(0, 0, 0) 40%);; */
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
@@ -270,10 +265,12 @@ p {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
+  align-items: right;
   justify-content: center;
   padding: 2rem 4rem;
-  text-align: center;
+  margin-right: 15rem;
+  margin-left: 50rem;
+  text-align: right;
 }
 
 .hero-icon {
@@ -291,8 +288,9 @@ p {
 
 .hero-footer-navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: right;
+  gap: 30px;
   padding: 1rem;
 }
 
@@ -314,13 +312,11 @@ p {
   background: url(project-images/angels/AngelsPreviewBase-hevc-safari-hb.mp4);
 }
 
-
-
 #background-video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -514,17 +510,47 @@ p {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 0;
+  }
+
+  .grid li {
+    position: relative;
+    text-align: center;
+  }
+
+  .work-page-grid-item a div {
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    z-index: 5;
+    position: absolute;
+    background-color: rgba(22, 27, 47, 0.5);
+    top: 0%;
+    display: none;
+  }
+
+  .work-page-grid-item a h3 {
+    padding-top: 25%;
+  }
+
+  .work-page-grid-item a p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .work-page-grid-item>a:hover div,
+  .work-page-grid-item>a:active div {
+    display: block;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a img {
-    filter: grayscale(100);
+    filter: grayscale(0);
   }
 
   .work-page-grid-item>a:hover img,
   .work-page-grid-item>a:active img {
-    filter: grayscale(0);
+    filter: grayscale(100);
   }
 
 
@@ -604,5 +630,5 @@ p {
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
 
- 
+ }
 }
