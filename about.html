@@ -13,57 +13,73 @@
 
 <body>
 
-
+  <section class="hero">
     <header class="hero-header">
-        <ul class="branding-navigation">
-            <li><a href="index.html" class="custom-navigation">Work</a></li>
-            <li class="logo"><a href="index.html"><img src="Website_Logo.png" /></a></li>
-            <li><a href="about.html" class="custom-navigation">About</a></li>
-          </ul>
+      <ul class="branding-navigation">
+        <li class="logo"><a href="index.html"><img src="Website_Logo.png"/></a></li>
+        <li><a href="index.html" class="custom-navigation">Work</a></li>
+      </ul>
     </header>
+    <div class="hero-headline-wrapper">
+      <h1>Harlen Bertrand</h1>
+      <h2>Character Designer & Storyteller</h2>
+      <p>With an eye for articulate storytelling that transport readers into different worlds filled with adventure,
+        drama, action, and sometimes even horror, I look to put those skills I’ve acquired to good use. With the
+        additional skills of artistry, writing, directing, and design, I look to create stories that have their own
+        cultures, history, and mysteries.</p>
 
-  <ul class="about">
-    <li class="about-item-1"><div class="about-image"><img src="Face-Loading.gif"></div>
-   </li>
-    <li class="about-item-2">  <h2>Harlen Bertrand</h2>
-      <h3>Jack of All Trades / Storyteller</h3>
-      <p>.</p>
-      <h3>Testimonials</h3>
-      <p>&lsquo;Telling a good story is like being a tour guide on a amusement park ride. You're taking the viewer on an adventure of emotions, thoughts, events, and experiences. If it's one thing I learned in IDEA, is that no matter what you're doing you will always be telling a story.&rsquo; — IDEA Grad 2022</p>
-  </li>
-  <li class="about-item-3">
-    <h2>Contact &amp; Social</h2>
-    <ul class="socials-list">
-      <li class="social-item"><a href="https://www.instagram.com/monstrous.creations/?hl=en">Insta</a></li>
-      <li class="social-item"><a href="https://www.linkedin.com/in/harlen-bertrand-734942210/">LinkedIn</a></li>
-      <li class="social-item"><a href="https://xmonster1.artstation.com/">Artstation</a></li>                
-    </ul>
-  </li>    
-  <li class="about-item-4">
-    <p><a href="#top">Smooth scroll to the top</a></p>
-    <p>&copy; 2022. Made with ❤ and CSS Grid by James Neufeld.</p>
-  </li>
-    </ul>
+      <h2>Awards &amp; Recognition</h2>
+      <a href="#">Irving K. Barber Scholarship</a>
+      <a
+        href="https://www.ideaschoolofdesign.com/home/2021/9/harlen-betrand-idea-grad-2023-wins-the-2021-gdc-foundation-cheryl-lynn-rutledge-northern-indigenous-student-award">GDC
+        Foundation Cheryl Lynn Rutledge Northern Indigenous Student Award</a>
+      <a href="#">Capilano University Dean's List</a>
+      <video id="background-video-about" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="project-images/work-page-images/harlen-face.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <ul class="global-footer-about">
+    <li><a href="https://www.instagram.com/monstrous.creations/?hl=en" class="custom-navigation">Instagram</a></li>
+    <li><a href="https://xmonster1.artstation.com/" class="custom-navigation">Artstation</a></li>
+    <li><a href="mailto:harlenbertrand@outlook.com" class="custom-navigation">Email</a></li>
   </ul>
 
-  <footer class="hero-footer">
-    <ul class="hero-footer-navigation">
-      <li><a href="#" class="custom-navigation">Instagram</a></li>
-      <li><a href="mailto:james@magnetude.com" class="custom-navigation">Email</a></li>
-    </ul>
-  </footer>
+  <ul class="global-footer-center-about">
+    <li><a href="javascript:void(0)" class="toggleGhost colored-link" id="btnGhost value=" Hide Ghost" onclick="ShowHideDiv(this)">&copy; Monstrous Creations</a></li>
+  </ul>
 
-    <div id="ghostanimation" class="ghost"><img src="cactus.svg" /></div>
-    <script type="text/javascript">function ShowHideDiv(btnGhost) {
+  <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+
+  <div id="ghostanimation" class="ghost"><img src="OldManWalker.png" /></div>
+
+  <script type="text/javascript">
+    function ShowHideDiv(btnGhost) {
       var GhostStyle = document.getElementById("ghostanimation");
-if (btnGhost.value == "Hide Ghost") {
-          GhostStyle.style.display = "none";
-          btnGhost.value = "Play Ghost";
+      if (btnGhost.value == "Hide Ghost") {
+        GhostStyle.style.display = "none";
+        btnGhost.value = "Play Ghost";
       } else {
-          GhostStyle.style.display = "block";
-          btnGhost.value = "Hide Ghost";
+        GhostStyle.style.display = "block";
+        btnGhost.value = "Hide Ghost";
       }
-  }</script>    
+    }
+  </script>
+  <script type="text/javascript">
+    myID = document.getElementById("myID");
+
+    var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 800) {
+        myID.className = "bottomMenu show"
+      } else {
+        myID.className = "bottomMenu hide"
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
 </body>
 
 </html>
