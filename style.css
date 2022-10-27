@@ -135,6 +135,8 @@ h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
   line-height: 1.3;
+  color: white;
+  font-weight: 200;
 }
 
 /* Hyperlink Styles */
@@ -267,10 +269,21 @@ p {
   flex-direction: column;
   flex: 1;
   align-items: right;
-  justify-content: center;
-  padding: 2rem 4rem;
-  margin-right: 0rem;
-  margin-left: 80rem;
+  padding: 1rem 1rem;
+  margin-left: 60rem;
+  margin-top: 14rem;
+  text-align: right;
+}
+
+.hero-headline-wrapper-about {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: right;
+  padding: 1rem 1rem;
+  margin-left: 60rem;
+  margin-right: 5rem;
+  margin-top: 4rem;
   text-align: right;
 }
 
@@ -331,7 +344,7 @@ p {
   object-fit: cover;
   position: absolute;
   left: 0;
-  right: 0;
+  bottom: 5rem;
   z-index: -1;
 }
 
@@ -358,6 +371,7 @@ p {
   flex-direction: row-reverse;
   justify-content: left;
   gap: 30px;
+  padding-left: 2%;
 }
 
 .about {
