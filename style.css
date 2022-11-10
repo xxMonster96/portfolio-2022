@@ -273,10 +273,9 @@ p {
   width: 100%;
   /* text-align: right; */
 }
-.branding-section { /*Change this to a square video*/
+.branding-section {
   width: 100%; 
-  background: lightyellow; 
-  padding: 3rem;}
+  padding: 1rem;}
 
 .hero-title-section {
   width: 100%; 
@@ -292,7 +291,7 @@ p {
   flex-direction: column;
   flex: 1;
   align-items: right;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 0rem 15vw;
   margin-left: 60rem;
   margin-right: 5rem;
   margin-top: 4rem;
@@ -341,7 +340,7 @@ p {
 
 #background-video {
   width: 100%;
-height: auto;
+  height: auto;
   object-fit: cover;
   /* position: absolute;
   left: 0;
@@ -495,6 +494,10 @@ height: auto;
   padding: 1rem;
 }
 
+.project-seperation {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 /*
 
