@@ -83,14 +83,14 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  /* background: var(--background-color); */
+  background: black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 ::selection {
-  background: hotpink;
+  /*background: hotpink;*/
 }
 
 /* Making all images responsive */
@@ -270,14 +270,21 @@ p {
   flex: 1;
   /* align-items: right; */
   padding: 1rem 1rem;
-width: 100%;
+  width: 100%;
   /* text-align: right; */
-  background: hotpink;
 }
-.branding-section {background: lightblue; width: 100%; background: lightyellow; padding: 3rem;}
+.branding-section { /*Change this to a square video*/
+  width: 100%; 
+  background: lightyellow; 
+  padding: 3rem;}
 
-.hero-headline { }
-.hero-title-section {width: 100%; background: green; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.hero-title-section {
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
 
 
 .hero-headline-wrapper-about {
@@ -523,7 +530,7 @@ height: auto;
   }
 
   .logo {
-    width: 5rem;
+    width: 4rem;
   }
 
   .hero {
@@ -534,11 +541,6 @@ height: auto;
   .hero-headline-wrapper {
     flex-direction: row;
   }
-
-
-
-
-
 
   .branding-section {width: 50%;}
 .hero-title-section {width: 50%; }
