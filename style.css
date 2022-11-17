@@ -456,7 +456,7 @@ p {
   width: 100%;
   color: white;
   background: black;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
